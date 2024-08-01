@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="logo row">
+                    <img src="./assets/photos/LogoDelizioso.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul class="row">
+                        <li onclick="homePage()">Home</li>
+                        <li onclick="menuPage()">Menu</li>
+                        <li onclick="aboutPage()">About us</li>
+                        <li >Order online</li>
+                        <li>Reservation</li>
+                        <li onclick="contactPage()">Contact us</li>
+                    </ul>
+                </div>
+                <div class="row left">
+                    <div class="basket">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-cart2" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                        </svg>
+                    </div>
+                    <div class="login"><button class="btn" data-toggle="modal" data-target="#loginModal">Log in</button></div>
+                    <div class="dropdown">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="dropbtn">
+                            <rect x="1" y="1" width="11" height="11" fill="#5C3E00"/>
+                            <rect x="14" y="1" width="11" height="11" fill="#5C3E00"/>
+                            <rect x="1" y="14" width="11" height="11" fill="#5C3E00"/>
+                            <rect x="14" y="14" width="11" height="11" fill="#FF8C00"/>
+                          </svg>
+                        <div class="dropdown-content">
+                          <a onclick="homePage()">Home</a>
+                          <a onclick="menuPage()">Menu</a>
+                          <a onclick="aboutPage()">About us</a>
+                        <a >Order online</a>
+                        <a>Reservation</a>
+                        <a onclick="contactPage()">Contact us</a>
+                        </div>
+                      </div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section-home">
+        <div class="container">
+            <div class="row">
+                <div class="left col-xs-12 col-sm-12 col-md-6 col-xl-6">
+                    <span>Restaurant</span>
+                    <h2>Italian <br> Cuisine</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales senectus dictum arcu sit
+                        tristique donec eget.</p>
+                    <button class="btn-orange">Order now</button>
+                    <button class="btn-green">Reservation</button>
+                </div>
+                <div class="right col-xs-12 col-sm-12 col-md-6 col-xl-6">
+                    <img src="./assets/photos/Illustration.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-salad">
+        <div class="container">
+            <div class="row">
+                <div class="left col-xs-12 col-sm-12 col-md-6 col-xl-6">
+                    <img src="./assets/photos/Picture.png" alt="">
+                </div>
+                <div class="right col-xs-12 col-sm-12 col-md-6 col-xl-6">
+                    <h2>Welcome to <span>delizioso</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin.
+                        Congue nibh nulla malesuada ultricies nec quam </p>
+                    <button class="btn-orange">See our menu</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-menu">
+        <div class="text">
+            <h2>Our popular menu</h2>
+        </div>
+        <div class="container">
+            <div class="category">
+                <button class="category-btn active">All category</button>
+                <button class="category-btn">Dinner</button>
+                <button class="category-btn">Lunch</button>
+                <button class="category-btn">Dessert</button>
+                <button class="category-btn">Drink</button>
+            </div>
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="./assets/photos/spaghetti.png" alt="Spaghetti" style="width: 270px;">
+                    <h3>Spaghetti</h3>
+                    <div class="stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor
+                        aliquam, diam.</p>
+                    <div class="price-order">
+                        <span>$12.05</span>
+                        <button class="order-btn">Order now</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/photos/Gnocchi.png" alt="Gnocchi">
+                    <h3>Gnocchi</h3>
+                    <div class="stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor
+                        aliquam, diam.</p>
+                    <div class="price-order">
+                        <span>$12.05</span>
+                        <button class="order-btn">Order now</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/photos/Rovioli.png" alt="Ravioli">
+                    <h3>Ravioli</h3>
+                    <div class="stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor
+                        aliquam, diam.</p>
+                    <div class="price-order">
+                        <span>$12.05</span>
+                        <button class="order-btn">Order now</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/photos/Penne.png" alt="Penne Alla Vodka">
+                    <h3>Penne Alla Vodak</h3>
+                    <div class="stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor
+                        aliquam, diam.</p>
+                    <div class="price-order">
+                        <span>$12.05</span>
+                        <button class="order-btn">Order now</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/photos/risoto.png" alt="Risotto">
+                    <h3>Risotto</h3>
+                    <div class="stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor
+                        aliquam, diam.</p>
+                    <div class="price-order">
+                        <span>$12.05</span>
+                        <button class="order-btn">Order now</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/photos/splitza.png" alt="Pizza">
+                    <h3>Splitza Signature</h3>
+                    <div class="stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor
+                        aliquam, diam.</p>
+                    <div class="price-order">
+                        <span>$12.05</span>
+                        <button class="order-btn">Order now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <button class="page-btn" style="background-color: rgba(49, 31, 9, 1); color: white;"><</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span>...</span>
+                        <button class="page-btn" style="background-color: rgba(49, 31, 9, 1); color: white;">></button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-reserve">
+        <div class="">
+            <div class="row">
+                <div class="left col-xs-12 col-sm-12 col-md-6 col-xl-6">
+                    <img src="./assets/photos/table.png" alt="">
+                </div>
+                <div class="right col-xs-12 col-sm-12 col-md-6 col-xl-6">
+                    <h2>Let's reserve <br><span> a table </span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin.
+                        Congue nibh nulla malesuada ultricies nec quam </p>
+                    <button class="btn-orange">Reservation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-chef">
+        <div class="text">
+            <h2>Our greatest chef</h2>
+        </div>
+        <div class="row justify-content-center chefs ">
+            <div class="item">
+                <div class="img" style="background-color: rgba(196, 196, 196, 1);">
+                    <img src="./assets/photos/betran.png" alt="">
+                </div>
+                <h3>Betran Komar</h3>
+                <p>Head chef</p>
+            </div>
+            <div class="item">
+                <div class="img" style="background-color: rgba(255, 138, 0, .2)">
+                    <img src="./assets/photos/ferry.png" alt="">
+                </div>
+                <h3>Ferry Sauwi</h3>
+                <p>Chef</p>
+            </div>
+            <div class="item repeat" >
+                <div class="img" >
+                    <img src="./assets/photos/ferry.png" alt="">
+                </div>
+                <h3>Ferry Sauwi</h3>
+                <p>Chef</p>
+            </div>
+            <div class="item">
+                <div class="img" style="background-color: rgba(157, 101, 66, .2);">
+                    <img src="./assets/photos/iswan.png" alt="">
+                </div>
+                <h3>Iswan Dracho</h3>
+                <p>Chef</p>
+            </div>
+          
+        </div>
+        <div class="btn">
+            <button>View all</button>
+        </div>
+    </section>
+
+
+    <section class="section-customers">
+        <div class="container">
+            <div class="text">
+                <h2>Our customers say</h2>
+            </div>
+            <img src="./assets/photos/user.png" alt="" class="user">
+            <h2>Starla Virgoun</h2>
+            <span>Financial advisor</span>
+            <p>"
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue
+                nibh
+                nulla malesuada ultricies nec quam "</p>
+            <img src="./assets/photos/users.png" alt="" class="users">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="circle circle-4"></div>
+            <div class="circle circle-5"></div>
+            <div class="circle circle-6"></div>
+        </div>
+    </section>
+
+    <section class="section-info">
+        <div class="container">
+            <div class="content">
+                <h1>We are open from</h1>
+                <h2>Monday-Sunday</h2>
+                <p>Launch: Mon-Sun : 11:00am-02:00pm</p>
+                <p>Dinner: Sunday : 04:00pm-08:00pm<br>04:00pm-09:00pm</p>
+                <div class="buttons">
+                    <button class="button">Order now</button>
+                    <button class="button reserve">Reservation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+
+            <div class="footer">
+                 <div class="row justify-content-center " style="gap: 50px;">
+                <div class="footer-column logo-column" style="width: 350px;">
+                    <div class="logo">
+                       <img src="./assets/photos/Logo Delizioso.png" alt="">
+                    </div>
+                    <p >Viverra gravida morbi egestas facilisis tortor netus non duis tempor.</p>
+                    <div class="social-icons">
+                       <a href="https://twitter.com/deliziosofood"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                          </svg></a>
+                          <a href="https://www.instagram.com/ledelizioso/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                          </svg></a>
+                         <a href="https://www.instagram.com/ledelizioso/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                          </svg></a>
+                    </div>
+                </div>
+                <div class="footer-column page" style="width: 123px;">
+                    <h3>Page</h3>
+                    <a href="#">Home</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Order online</a>
+                    <a href="#">Catering</a>
+                    <a href="#">Reservation</a>
+                </div>
+                <div class="footer-column info"  style="width: 191px;">
+                    <h3>Information</h3>
+                    <a href="#">About us</a>
+                    <a href="#">Testimonial</a>
+                    <a href="#">Event</a>
+                </div>
+                <div class="footer-column contact"  style="width: 280px;">
+                    <h3>Get in touch</h3>
+                    <p>3247 Johnson Ave, Bronx, NY 10463, Amerika Serikat</p>
+                    <p>delizioso@gmail.com</p>
+                    <p>+123 4567 8901</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+  <!-- Log in Modal -->
+  <div class="modal fade" id="loginModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <div class="modal-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="avatar">
+                                <span class="badge badge-pill badge-warning" style="font-size: 24px;">D</span>
+                            </div>
+                        </div>
+                        <h2 class="modal-title">Login</h2>
+                        <p>Don't have an account? <a href="" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Sign up</a></p>
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                                <a href="#" class="float-right">Forgot Password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-warning btn-block mt-4">Log in</button>
+                            <button type="button" class="btn btn-outline-secondary btn-block mt-2">
+                                <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google Logo" class="mr-2">Log in with Google
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 d-none d-md-block">
+                    <div class="login-image"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p class="text-center w-100 mb-0">Copyright © 2022 Delizioso</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!--  Sign Up Modal -->
+    <div class="modal fade" id="signupModal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <div class="modal-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="avatar">
+                                    <span class="badge badge-pill badge-warning" style="font-size: 24px;">D</span>
+                                </div>
+                            </div>
+                            <h2 class="modal-title">Sign up</h2>
+                            <p>Don't have an account? <a href="" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Log in</a></p>
+                            <form id="signupForm">
+                                <div class="form-group">
+                                    <label for="fullname">Fullname address</label>
+                                    <input type="fullname" class="form-control" id="fullname" placeholder="Fullname address" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email address" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                                    <a href="#" class="float-right">Forgot Password?</a>
+                                </div>
+                                <button type="submit" class="btn btn-warning btn-block mt-4">Sign up</button>
+                                <button type="button" class="btn btn-outline-secondary btn-block mt-2">
+                                    <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google Logo" class="mr-2">Sign up with Google
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-none d-md-block">
+                        <div class="login-image"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="text-center w-100 mb-0">Copyright © 2022 Delizioso</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

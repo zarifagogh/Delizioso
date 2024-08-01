@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="logo row">
+                    <img src="./assets/photos/LogoDelizioso.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul class="row">
+                        <li onclick="homePage()">Home</li>
+                        <li onclick="menuPage()">Menu</li>
+                        <li onclick="aboutPage()">About us</li>
+                        <li >Order online</li>
+                        <li>Reservation</li>
+                        <li onclick="contactPage()">Contact us</li>
+                    </ul>
+                </div>
+                <div class="row left">
+                    <div class="basket">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-cart2" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                        </svg>
+                    </div>
+                    <div class="login"><button class="btn">Log in</button></div>
+                    <div class="dropdown">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="dropbtn">
+                            <rect x="1" y="1" width="11" height="11" fill="#5C3E00"/>
+                            <rect x="14" y="1" width="11" height="11" fill="#5C3E00"/>
+                            <rect x="1" y="14" width="11" height="11" fill="#5C3E00"/>
+                            <rect x="14" y="14" width="11" height="11" fill="#FF8C00"/>
+                          </svg>
+                        <div class="dropdown-content">
+                          <a onclick="homePage()">Home</a>
+                          <a onclick="menuPage()">Menu</a>
+                          <a onclick="aboutPage()">About us</a>
+                        <a >Order online</a>
+                        <a>Reservation</a>
+                        <a onclick="contactPage()">Contact us</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-contact">
+        <div class="container">
+            <h1>Contact us</h1>
+            <p>We love hearing from our customers. Feel free to share your experience or ask any questions you may have.
+            </p>
+                <form>
+                    <div class="half-width">
+                        <input type="text" name="first-name" placeholder="First name">
+                    </div>
+                    <div class="half-width" style="float: right;">
+                        <input type="text" name="last-name" placeholder="Last name">
+                    </div>
+                    <div class="half-width">
+                    <input type="email" name="email" placeholder="Email address">
+                </div>
+                <div class="half-width" style="float: right;">
+                    <input type="text" name="subject" placeholder="Subject">
+                </div>
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <div style="text-align: center;">
+                    <button type="submit">Submit</button>
+                </div>
+                </form>
+        </div>
+        <div class="map">
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-1"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z"/></svg>
+        </div>
+        <div class="info">
+            <div class="img">
+                <img src="./assets/photos/cafe.png" alt="">
+            </div>
+            <div class="text">
+                <h2>Delizioso Restaurant</h2>
+                <p>Bronx, NY 10463, Amerika Serikat <br>
+                    40.885147,-73.9220459
+                </p>
+            </div>
+            <div class="svg tg" >
+                <svg xmlns="http://www.w3.org/2000/svg"  width="100" height="100" viewBox="0 0 50 50" class="svg-2">
+                    <path d="M25,2c12.703,0,23,10.297,23,23S37.703,48,25,48S2,37.703,2,25S12.297,2,25,2z M32.934,34.375	c0.423-1.298,2.405-14.234,2.65-16.783c0.074-0.772-0.17-1.285-0.648-1.514c-0.578-0.278-1.434-0.139-2.427,0.219	c-1.362,0.491-18.774,7.884-19.78,8.312c-0.954,0.405-1.856,0.847-1.856,1.487c0,0.45,0.267,0.703,1.003,0.966	c0.766,0.273,2.695,0.858,3.834,1.172c1.097,0.303,2.346,0.04,3.046-0.395c0.742-0.461,9.305-6.191,9.92-6.693	c0.614-0.502,1.104,0.141,0.602,0.644c-0.502,0.502-6.38,6.207-7.155,6.997c-0.941,0.959-0.273,1.953,0.358,2.351	c0.721,0.454,5.906,3.932,6.687,4.49c0.781,0.558,1.573,0.811,2.298,0.811C32.191,36.439,32.573,35.484,32.934,34.375z"></path>
+                    </svg>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="row justify-content-center " style="gap: 50px;">
+                    <div class="footer-column logo-column" style="width: 352px;">
+                        <div class="logo">
+                            <img src="./assets/photos/Logo Delizioso.png" alt="">
+                         </div>
+                        <p>Viverra gravida morbi egestas facilisis tortor netus non duis tempor.</p>
+                        <div class="social-icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="footer-column page" style="width: 123px;">
+                        <h3>Page</h3>
+                        <a href="#">Home</a>
+                        <a href="#">Menu</a>
+                        <a href="#">Order online</a>
+                        <a href="#">Catering</a>
+                        <a href="#">Reservation</a>
+                    </div>
+                    <div class="footer-column info" style="width: 191px;">
+                        <h3>Information</h3>
+                        <a href="#">About us</a>
+                        <a href="#">Testimonial</a>
+                        <a href="#">Event</a>
+                    </div>
+                    <div class="footer-column contact" style="width: 280px;">
+                        <h3>Get in touch</h3>
+                        <p>3247 Johnson Ave, Bronx, NY 10463, Amerika Serikat</p>
+                        <p>delizioso@gmail.com</p>
+                        <p>+123 4567 8901</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
