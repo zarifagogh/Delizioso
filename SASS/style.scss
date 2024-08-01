@@ -1100,6 +1100,9 @@ display: none;
 }
 
 @media screen and (max-width: 370px){
+    *{
+        overflow-x: hidden;
+    }
 .section-home {
     button {
         margin: 10px 0;
