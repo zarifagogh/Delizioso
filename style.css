@@ -469,6 +469,7 @@ header .container .row .left .dropdown:hover .dropdown-content {
   font-weight: bold;
   font-family: Poppins;
   transition: 1s;
+  color: rgb(49, 31, 9);
 }
 .section-menu .category .category-btn:hover {
   background-color: rgb(49, 31, 9);
@@ -571,6 +572,9 @@ header .container .row .left .dropdown:hover .dropdown-content {
 }
 .section-reserve .left img {
   width: 90%;
+}
+.section-reserve .right {
+  margin-left: 40px;
 }
 .section-reserve .right h2 {
   font-family: Tinos;
@@ -989,7 +993,7 @@ footer .footer-column .social-icons svg:hover {
 #loginModal .login-image {
   width: 100%;
   height: 100%;
-  background-image: url(../assets/photos/Login.png);
+  background-image: url(./assets/photos/Login.png);
   background-size: cover;
 }
 
@@ -999,7 +1003,7 @@ footer .footer-column .social-icons svg:hover {
 #signupModal .login-image {
   width: 100%;
   height: 100%;
-  background-image: url(../assets/photos/Login.png);
+  background-image: url(./assets/photos/Login.png);
   background-size: cover;
 }
 
@@ -1142,5 +1146,10 @@ footer .footer-column .social-icons svg:hover {
   }
   .section-contact .half-width {
     width: 100%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .section-home button {
+    margin: 10px 0;
   }
 }/*# sourceMappingURL=style.css.map */
