@@ -574,7 +574,7 @@ header .container .row .left .dropdown:hover .dropdown-content {
   width: 90%;
 }
 .section-reserve .right {
-  margin-left: 40px;
+  padding-left: 40px;
 }
 .section-reserve .right h2 {
   font-family: Tinos;
